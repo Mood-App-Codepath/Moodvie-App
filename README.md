@@ -15,8 +15,6 @@ Moodvie is an iOS application where users can find a movie depending on the user
 
 ### App Evaluation
 
-# later on in the future the user can find the mood they were in from like graph or something
-
 - **Category:** Social Networking/ Movie
 - **Mobile:** This application will solely be built for iOS, but will be available in other devices as well soon.
 - **Story:** Analyzes user's preferences for the movie, and finds the movie's reviews left by other users, and streaming platform that it is posted on, and join communities within the application.
