@@ -71,11 +71,104 @@ Moodvie is an iOS application where users can find a movie depending on the user
 ### [BONUS] Interactive Prototype
 <img src=https://i.imgur.com/LFroOSM.gif width=300>
 
+
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+#### Post for Profile Table
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | userId      | Int   | unique id for the user and will auto increment |
+   | username        | String | username for user |
+   | password         | Password (string)     | password for user |
+   | name       | String   | user's name |
+
+#### Post for Mood Table
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | moodId      | String   | unique id for the mood and will auto increment |
+   | userId      | Int   | unique id for the user|
+   | feeling       | Int (?)   | how the user is feeling that day |
+   | movie_type | Number   | Genre that the user is interested in |
+   | movie_rating    | Number   | rating for the movie that user is interested in |
+  
+#### Post for Club Table
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | club_id       | Int   | unique id for clubs|
+   | club_name | Number   | number of comments that has been posted to an image |
+   | post    | String   | what the user posted in the Club |
+   | createdAt     | DateTime | date when post is created (default field) |
+
+
 ### Networking
-- [Add list of network requests by screen ]
+#### List of network requests by screen
+   - Login Screen
+      - (Read/GET) Check to see username and password is correct
+         
+      - (Create/POST) Create a new user (username, password, and name)
+   - Mood Screen
+      - (Create/POST) Create a new mood post of the user into the database
+      - (Read/GET) Check to see mode of the user
+         ```swift
+         let query = PFQuery(className:"Mood")
+         query.whereKey("author", equalTo: currentUser)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let posts = posts {
+               print("Successfully retrieved \(posts.count) posts.")
+           // TODO: Do something with posts...
+            }
+         }
+        ```
+
+
+
+   - Club Screen
+      - (Create/POST) Create a new post in club
+      - (Read/GET) Check the posts from each user in the club
+         ```swift
+         let query = PFQuery(className:"Post")
+         query.whereKey("author", equalTo: currentUser)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let posts = posts {
+               print("Successfully retrieved \(posts.count) posts.")
+           // TODO: Do something with posts...
+            }
+         }
+        ```
+
+
+#### [OPTIONAL:] Existing API Endpoints
+##### An API Of Ice And Fire
+- Base URL - [http://www.anapioficeandfire.com/api](http://www.anapioficeandfire.com/api)
+
+   HTTP Verb | Endpoint | Description
+   ----------|----------|------------
+    `GET`    | /characters | get all characters
+    `GET`    | /characters/?name=name | return specific character by name
+    `GET`    | /houses   | get all houses
+    `GET`    | /houses/?name=name | return specific house by name
+
+##### Game of Thrones API
+- Base URL - [https://api.got.show/api](https://api.got.show/api)
+
+   HTTP Verb | Endpoint | Description
+   ----------|----------|------------
+    `GET`    | /cities | gets all cities
+    `GET`    | /cities/byId/:id | gets specific city by :id
+    `GET`    | /continents | gets all continents
+    `GET`    | /continents/byId/:id | gets specific continent by :id
+    `GET`    | /regions | gets all regions
+    `GET`    | /regions/byId/:id | gets specific region by :id
+    `GET`    | /characters/paths/:name | gets a character's path with a given name
+
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+
