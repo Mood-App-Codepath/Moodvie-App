@@ -107,6 +107,26 @@ Moodvie is an iOS application where users can find a movie depending on the user
       - (Read/GET) Check to see username and password is correct
          
       - (Create/POST) Create a new user (username, password, and name)
+         ```swift
+        func myMethod() {
+          var user = PFUser()
+          user.username = "myUsername"
+          user.password = "myPassword"
+          user.email = "email@example.com"
+          // other fields can be set just like with PFObject
+          user["phone"] = "415-392-0202"
+
+          user.signUpInBackground {
+            (succeeded: Bool, error: Error?) -> Void in
+            if let error = error {
+              let errorString = error.localizedDescription
+              // Show the errorString somewhere and let the user try again.
+            } else {
+              // Hooray! Let them use the app now.
+            }
+          }
+        }
+        ```
    - Mood Screen
       - (Create/POST) Create a new mood post of the user into the database
       - (Read/GET) Check to see mode of the user
@@ -142,33 +162,3 @@ Moodvie is an iOS application where users can find a movie depending on the user
             }
          }
         ```
-
-
-#### [OPTIONAL:] Existing API Endpoints
-##### An API Of Ice And Fire
-- Base URL - [http://www.anapioficeandfire.com/api](http://www.anapioficeandfire.com/api)
-
-   HTTP Verb | Endpoint | Description
-   ----------|----------|------------
-    `GET`    | /characters | get all characters
-    `GET`    | /characters/?name=name | return specific character by name
-    `GET`    | /houses   | get all houses
-    `GET`    | /houses/?name=name | return specific house by name
-
-##### Game of Thrones API
-- Base URL - [https://api.got.show/api](https://api.got.show/api)
-
-   HTTP Verb | Endpoint | Description
-   ----------|----------|------------
-    `GET`    | /cities | gets all cities
-    `GET`    | /cities/byId/:id | gets specific city by :id
-    `GET`    | /continents | gets all continents
-    `GET`    | /continents/byId/:id | gets specific continent by :id
-    `GET`    | /regions | gets all regions
-    `GET`    | /regions/byId/:id | gets specific region by :id
-    `GET`    | /characters/paths/:name | gets a character's path with a given name
-
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
-
-
