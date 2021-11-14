@@ -1,0 +1,6 @@
+framework module Pods_Moodvie_App_Moodvie_AppUITests {
+  umbrella header "Pods-Moodvie-App-Moodvie-AppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
