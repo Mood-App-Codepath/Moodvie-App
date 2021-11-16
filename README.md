@@ -98,7 +98,7 @@ Moodvie is an iOS application where users can find a movie depending on the user
    | club_id       | Int   | unique id for clubs|
    | club_name | Number   | number of comments that has been posted to an image |
    | post    | String   | what the user posted in the Club |
-   | createdAt     | DateTime | date when post is created (default field) |
+   | created_time     | DateTime | date when post is created (default field) |
 
 
 ### Networking
