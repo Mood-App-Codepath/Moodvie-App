@@ -12,7 +12,6 @@
 		4FF1691EA4CC9190351DE033 /* Pods_Moodvie_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDE84FA361C6EC247B1AE5B /* Pods_Moodvie_AppTests.framework */; };
 		B00069962740F1EE009CE8D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00069952740F1EE009CE8D0 /* AppDelegate.swift */; };
 		B00069982740F1EE009CE8D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00069972740F1EE009CE8D0 /* SceneDelegate.swift */; };
-		B000699A2740F1EE009CE8D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00069992740F1EE009CE8D0 /* ViewController.swift */; };
 		B000699D2740F1EE009CE8D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B000699B2740F1EE009CE8D0 /* Main.storyboard */; };
 		B000699F2740F1EF009CE8D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B000699E2740F1EF009CE8D0 /* Assets.xcassets */; };
 		B00069A22740F1EF009CE8D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00069A02740F1EF009CE8D0 /* LaunchScreen.storyboard */; };
@@ -20,6 +19,8 @@
 		B00069B72740F1EF009CE8D0 /* Moodvie_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00069B62740F1EF009CE8D0 /* Moodvie_AppUITests.swift */; };
 		B00069B92740F1EF009CE8D0 /* Moodvie_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00069B82740F1EF009CE8D0 /* Moodvie_AppUITestsLaunchTests.swift */; };
 		B00069C72740F30B009CE8D0 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = B00069C62740F30B009CE8D0 /* AlamofireImage */; };
+		B0ADD5A827435EBD00A73195 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ADD5A727435EBD00A73195 /* LoginViewController.swift */; };
+		B0ADD5AA2743614000A73195 /* moodvie.png in Resources */ = {isa = PBXBuildFile; fileRef = B0ADD5A92743613F00A73195 /* moodvie.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,6 @@
 		B00069922740F1EE009CE8D0 /* Moodvie-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moodvie-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00069952740F1EE009CE8D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B00069972740F1EE009CE8D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B00069992740F1EE009CE8D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B000699C2740F1EE009CE8D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B000699E2740F1EF009CE8D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B00069A12740F1EF009CE8D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +59,8 @@
 		B00069B22740F1EF009CE8D0 /* Moodvie-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Moodvie-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00069B62740F1EF009CE8D0 /* Moodvie_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moodvie_AppUITests.swift; sourceTree = "<group>"; };
 		B00069B82740F1EF009CE8D0 /* Moodvie_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moodvie_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B0ADD5A727435EBD00A73195 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B0ADD5A92743613F00A73195 /* moodvie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = moodvie.png; path = Assets.xcassets/moodvie.png; sourceTree = "<group>"; };
 		C14E80F200C16FE1C3554692 /* Pods-Moodvie-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moodvie-App.release.xcconfig"; path = "Target Support Files/Pods-Moodvie-App/Pods-Moodvie-App.release.xcconfig"; sourceTree = "<group>"; };
 		CE02197E9FA223FDA08BFEAF /* Pods_Moodvie_App_Moodvie_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moodvie_App_Moodvie_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF7BED1CFF997FF4177A48C6 /* Pods-Moodvie-AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moodvie-AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Moodvie-AppTests/Pods-Moodvie-AppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,7 +105,6 @@
 				CF7BED1CFF997FF4177A48C6 /* Pods-Moodvie-AppTests.debug.xcconfig */,
 				4A91C8A2C5F0712B3661AEE2 /* Pods-Moodvie-AppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,11 +145,12 @@
 			children = (
 				B00069952740F1EE009CE8D0 /* AppDelegate.swift */,
 				B00069972740F1EE009CE8D0 /* SceneDelegate.swift */,
-				B00069992740F1EE009CE8D0 /* ViewController.swift */,
 				B000699B2740F1EE009CE8D0 /* Main.storyboard */,
 				B000699E2740F1EF009CE8D0 /* Assets.xcassets */,
+				B0ADD5A92743613F00A73195 /* moodvie.png */,
 				B00069A02740F1EF009CE8D0 /* LaunchScreen.storyboard */,
 				B00069A32740F1EF009CE8D0 /* Info.plist */,
+				B0ADD5A727435EBD00A73195 /* LoginViewController.swift */,
 			);
 			path = "Moodvie-App";
 			sourceTree = "<group>";
@@ -286,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B00069A22740F1EF009CE8D0 /* LaunchScreen.storyboard in Resources */,
+				B0ADD5AA2743614000A73195 /* moodvie.png in Resources */,
 				B000699F2740F1EF009CE8D0 /* Assets.xcassets in Resources */,
 				B000699D2740F1EE009CE8D0 /* Main.storyboard in Resources */,
 			);
@@ -415,7 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B000699A2740F1EE009CE8D0 /* ViewController.swift in Sources */,
+				B0ADD5A827435EBD00A73195 /* LoginViewController.swift in Sources */,
 				B00069962740F1EE009CE8D0 /* AppDelegate.swift in Sources */,
 				B00069982740F1EE009CE8D0 /* SceneDelegate.swift in Sources */,
 			);
