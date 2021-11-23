@@ -166,8 +166,8 @@ Moodvie is an iOS application where users can find a movie depending on the user
         
        Mood and Search Page
        
-       
+       ![moodvieSearchFeature](https://user-images.githubusercontent.com/88856401/142971578-7cfaec51-f4b1-404b-a0e3-cccce09e6c4b.gif)
 
 
-https://user-images.githubusercontent.com/88856401/142971515-dc2d7801-8b4b-45da-bf7f-43bc2cedde77.mov
+
 
